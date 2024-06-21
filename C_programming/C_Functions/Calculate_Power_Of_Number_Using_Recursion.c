@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "string.h"
 
 int Power_Num(int base ,int power );
 	
