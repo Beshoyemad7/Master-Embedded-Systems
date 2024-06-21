@@ -2,7 +2,6 @@
 
 int Power_Num(int base ,int power );
 	
-
 void main()
 {
     int base, power;
