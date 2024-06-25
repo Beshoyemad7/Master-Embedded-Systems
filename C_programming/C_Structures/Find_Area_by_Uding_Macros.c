@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define pi          3.14
+#define Pi          3.14
 #define r_square    radius*radius
 
 void main()
@@ -10,6 +10,6 @@ void main()
 	printf("Enter the radius: ");
 	scanf("%d",&radius);
 
-	printf("Area= %.2f",pi*r_square);
+	printf("Area= %.2f",Pi*r_square);
 	
 }
