@@ -1,0 +1,44 @@
+/*
+ ******************************************************************************
+ * Created On     : Jul 24,2024
+ * File           : startup_cortexM3.s
+ * Author         : Beshoy Emad
+ ******************************************************************************
+*/
+
+
+.section .vectors  
+
+.word  0x20001000  		    /*stack top address*/            
+.word   _reset               /* .word carry symbol _reset (address reset)*/
+.word 	_vector_handler		/*2 NMI*/
+.word 	_vector_handler		/*3 NM FAULT*/
+.word 	_vector_handler		/*4 HARD FAULT*/
+.word 	_vector_handler		/*5 BUS FAULT*/
+.word 	_vector_handler		/*6 USAGE FAULT*/
+.word 	_vector_handler		/*7 RESERVED*/
+.word 	_vector_handler		/*8 RESERVED*/	
+.word 	_vector_handler		/*9 RESERVED*/
+.word 	_vector_handler		/*10 RESERVED*/
+.word 	_vector_handler		/*11 SV CALL*/
+.word 	_vector_handler		/*12 DEBUG RESERVED*/
+.word 	_vector_handler		/*13 RESERVED*/
+.word 	_vector_handler		/*14 PENDSV*/
+.word 	_vector_handler		/*15 SYSTICK*/
+.word 	_vector_handler		/*16 IRQ0*/
+.word 	_vector_handler		/*17 IRQ1*/
+.word 	_vector_handler		/*18 IRQ2*/
+.word 	_vector_handler		/*19 ...*/
+		/*ON TO IRQ67*/
+
+
+
+.section .text 
+_reset:     /*reset: call main()*/
+	bl main
+	b .
+	
+.thumb_func 	/*enable 32&16 bit instruction*/
+_vector_handler:
+	b _reset
+	
