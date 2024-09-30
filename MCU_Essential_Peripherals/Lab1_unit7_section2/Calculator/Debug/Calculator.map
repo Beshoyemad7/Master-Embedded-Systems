@@ -1,0 +1,481 @@
+Archive member included because of file (symbol)
+
+c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./main.o (__mulsi3)
+c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./LCD/Src/HAL_LCD.o (__udivmodsi4)
+c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./KEYPAD/Src/HAL_KEYPAD.o (__do_copy_data)
+c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./main.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+Parameter_Digits    0xa               ./main.o
+Math_Operators      0xa               ./main.o
+Parameters          0x28              ./main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./LCD/Src/HAL_LCD.o
+LOAD ./KEYPAD/Src/HAL_KEYPAD.o
+LOAD ./DIO/Src/MCAL_DIO.o
+LOAD ./main.o
+LOAD c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x13f2
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_10
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./LCD/Src/HAL_LCD.o
+ .text          0x00000092        0x0 ./KEYPAD/Src/HAL_KEYPAD.o
+ .text          0x00000092        0x0 ./DIO/Src/MCAL_DIO.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.delay_ms
+                0x00000092       0x9a ./LCD/Src/HAL_LCD.o
+                0x00000092                delay_ms
+ .text.GPIO_LCD_init
+                0x0000012c      0x106 ./LCD/Src/HAL_LCD.o
+                0x0000012c                GPIO_LCD_init
+ .text.HAL_LCD_Init
+                0x00000232       0x5a ./LCD/Src/HAL_LCD.o
+                0x00000232                HAL_LCD_Init
+ .text.HAL_LCD_Send_Cmnd
+                0x0000028c       0x50 ./LCD/Src/HAL_LCD.o
+                0x0000028c                HAL_LCD_Send_Cmnd
+ .text.HAL_LCD_Send_Char
+                0x000002dc       0x50 ./LCD/Src/HAL_LCD.o
+                0x000002dc                HAL_LCD_Send_Char
+ .text.HAL_LCD_Send_String
+                0x0000032c       0x6c ./LCD/Src/HAL_LCD.o
+                0x0000032c                HAL_LCD_Send_String
+ .text.HAL_LCD_GOTO_XY
+                0x00000398       0x56 ./LCD/Src/HAL_LCD.o
+                0x00000398                HAL_LCD_GOTO_XY
+ .text.HAL_LCD_Clean_Screen
+                0x000003ee       0x20 ./LCD/Src/HAL_LCD.o
+                0x000003ee                HAL_LCD_Clean_Screen
+ .text.HAL_LCD_Send_Number
+                0x0000040e       0xee ./LCD/Src/HAL_LCD.o
+                0x0000040e                HAL_LCD_Send_Number
+ .text.HAL_LCD_Special_Character
+                0x000004fc       0x80 ./LCD/Src/HAL_LCD.o
+                0x000004fc                HAL_LCD_Special_Character
+ .text.GPIO_KPD_init
+                0x0000057c       0xec ./KEYPAD/Src/HAL_KEYPAD.o
+                0x0000057c                GPIO_KPD_init
+ .text.KPD_GetKeyState
+                0x00000668      0x126 ./KEYPAD/Src/HAL_KEYPAD.o
+                0x00000668                KPD_GetKeyState
+ .text.MCAL_DIO_Init
+                0x0000078e      0x31a ./DIO/Src/MCAL_DIO.o
+                0x0000078e                MCAL_DIO_Init
+ .text.MCAL_DIO_WritePin
+                0x00000aa8      0x14c ./DIO/Src/MCAL_DIO.o
+                0x00000aa8                MCAL_DIO_WritePin
+ .text.MCAL_DIO_WritePort
+                0x00000bf4       0x66 ./DIO/Src/MCAL_DIO.o
+                0x00000bf4                MCAL_DIO_WritePort
+ .text.MCAL_DIO_ReadPin
+                0x00000c5a       0xb2 ./DIO/Src/MCAL_DIO.o
+                0x00000c5a                MCAL_DIO_ReadPin
+ .text.MCAL_DIO_ReadPort
+                0x00000d0c       0x76 ./DIO/Src/MCAL_DIO.o
+                0x00000d0c                MCAL_DIO_ReadPort
+ .text.MCAL_DIO_TogglePin
+                0x00000d82       0xa6 ./DIO/Src/MCAL_DIO.o
+                0x00000d82                MCAL_DIO_TogglePin
+ .text.Calc_Power
+                0x00000e28       0x7e ./main.o
+                0x00000e28                Calc_Power
+ .text.Integrate_Numbers
+                0x00000ea6       0xd6 ./main.o
+                0x00000ea6                Integrate_Numbers
+ .text.Perform_Operation
+                0x00000f7c      0x274 ./main.o
+                0x00000f7c                Perform_Operation
+ .text.KPD_Calculator
+                0x000011f0       0xa2 ./main.o
+                0x000011f0                KPD_Calculator
+ .text.main     0x00001292       0xda ./main.o
+                0x00001292                main
+ .text.libgcc   0x0000136c       0x3e c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x0000136c                __mulsi3
+ .text.libgcc   0x000013aa       0x44 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000013aa                __udivmodsi4
+ .text.libgcc   0x000013ee        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000013ee        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000013ee        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000013ee                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000013ee        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000013ee                exit
+                0x000013ee                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000013ee        0x4 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000013f2                _etext = .
+
+.data           0x00800060       0x32 load address 0x000013f2
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./LCD/Src/HAL_LCD.o
+ .data          0x00800060        0x0 ./KEYPAD/Src/HAL_KEYPAD.o
+ .data          0x00800060        0x0 ./DIO/Src/MCAL_DIO.o
+ .data          0x00800060        0x0 ./main.o
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ .data.KPD_Keys
+                0x00800060       0x20 ./KEYPAD/Src/HAL_KEYPAD.o
+                0x00800060                KPD_Keys
+ .data.KPD_RowsPins
+                0x00800080        0x8 ./KEYPAD/Src/HAL_KEYPAD.o
+                0x00800080                KPD_RowsPins
+ .data.KPD_ColumnsPins
+                0x00800088        0x8 ./KEYPAD/Src/HAL_KEYPAD.o
+                0x00800088                KPD_ColumnsPins
+ .data.DIO_x    0x00800090        0x2 ./DIO/Src/MCAL_DIO.o
+                0x00800090                DIO_x
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800092                . = ALIGN (0x2)
+                0x00800092                _edata = .
+                0x00800092                PROVIDE (__data_end, .)
+
+.bss            0x00800092       0x43
+                0x00800092                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800092        0x0 ./LCD/Src/HAL_LCD.o
+ .bss           0x00800092        0x0 ./KEYPAD/Src/HAL_KEYPAD.o
+ .bss           0x00800092        0x0 ./DIO/Src/MCAL_DIO.o
+ .bss           0x00800092        0x0 ./main.o
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800092        0x0 c:/users/beshoy emad/onedrive/desktop/imt/imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Count_Parameters
+                0x00800092        0x1 ./main.o
+                0x00800092                Count_Parameters
+ .bss.Count_Parameter_Digits
+                0x00800093        0x1 ./main.o
+                0x00800093                Count_Parameter_Digits
+ .bss.Count_Math_Operators
+                0x00800094        0x1 ./main.o
+                0x00800094                Count_Math_Operators
+ .bss.Result    0x00800095        0x4 ./main.o
+                0x00800095                Result
+ *(COMMON)
+ COMMON         0x00800099       0x3c ./main.o
+                0x00800099                Parameter_Digits
+                0x008000a3                Math_Operators
+                0x008000ad                Parameters
+                0x008000d5                PROVIDE (__bss_end, .)
+                0x000013f2                __data_load_start = LOADADDR (.data)
+                0x00001424                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000d5        0x0
+                0x008000d5                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000d5                PROVIDE (__noinit_end, .)
+                0x008000d5                _end = .
+                0x008000d5                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x1aa0
+ *(.stab)
+ .stab          0x00000000      0xa14 ./LCD/Src/HAL_LCD.o
+ .stab          0x00000a14      0x408 ./KEYPAD/Src/HAL_KEYPAD.o
+                                0x5f4 (size before relaxing)
+ .stab          0x00000e1c      0x720 ./DIO/Src/MCAL_DIO.o
+                                0x90c (size before relaxing)
+ .stab          0x0000153c      0x564 ./main.o
+                                0x750 (size before relaxing)
+
+.stabstr        0x00000000      0xf8a
+ *(.stabstr)
+ .stabstr       0x00000000      0xf8a ./LCD/Src/HAL_LCD.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Calculator.elf elf32-avr)
+LOAD linker stubs

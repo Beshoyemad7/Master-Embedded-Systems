@@ -1,0 +1,10 @@
+HAL_LCD.c:18:6:delay_ms	24	static
+HAL_LCD.c:37:6:GPIO_LCD_init	16	static
+HAL_LCD.c:115:6:HAL_LCD_Init	8	static
+HAL_LCD.c:160:6:HAL_LCD_Send_Cmnd	16	static
+HAL_LCD.c:232:6:HAL_LCD_Send_Char	16	static
+HAL_LCD.c:304:6:HAL_LCD_Send_String	24	static
+HAL_LCD.c:336:6:HAL_LCD_GOTO_XY	16	static
+HAL_LCD.c:365:6:HAL_LCD_Clean_Screen	8	static
+HAL_LCD.c:384:6:HAL_LCD_Send_Number	56	static
+HAL_LCD.c:425:6:HAL_LCD_Special_Character	24	static

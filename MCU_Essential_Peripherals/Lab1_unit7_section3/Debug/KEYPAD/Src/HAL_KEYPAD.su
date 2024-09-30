@@ -1,0 +1,2 @@
+HAL_KEYPAD.c:34:6:GPIO_KPD_init	16	static
+HAL_KEYPAD.c:97:9:KPD_GetKeyState	16	static
