@@ -1,0 +1,7 @@
+"EXTI/Src/MCAL_EXTI.o"
+"GPIO/Src/MCAL_GPIO.o"
+"LCD/Src/HAL_LCD.o"
+"Src/main.o"
+"Src/syscalls.o"
+"Src/sysmem.o"
+"Startup/startup_stm32f103c6tx.o"
